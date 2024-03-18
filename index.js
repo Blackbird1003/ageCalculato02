@@ -55,6 +55,7 @@ inputMonth.focus();
 });
 
 inputMonth.addEventListener("input",()=> {
+    
     let month = inputMonth.value;
     if(month.length== 0){
         labelMonth.classList.remove("error-text");
@@ -185,7 +186,7 @@ function calculate(day,month,year) {
 }
 
 sbtBtn.addEventListener("click",(e) => {
-    e.preventDefault;
+    e.preventDefault();
     let day = +inputDay.value;
     let month = +inputMonth.value;
     let year = +inputYear.value;
